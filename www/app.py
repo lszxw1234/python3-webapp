@@ -6,7 +6,7 @@ from datetime import datetime
 from aiohttp import web
 from jinja2 import Environment, FileSystemLoader
 
-from . import orm
+import orm
 from .coroweb import add_routes, add_static
 
 def init_jinja2(app, **kw):
